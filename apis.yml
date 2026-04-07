@@ -1,7 +1,12 @@
 aid: carters
-url: https://raw.githubusercontent.com/api-evangelist/carters/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/carters/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.carters.com
+description: >-
+  Shop for baby clothing, baby necessities and essentials at Carter’s, the most trusted
+  name in baby, kids, and toddler clothing. Shop our selection of cute baby & kids
+  clothing.
