@@ -1,0 +1,327 @@
+generated: '2026-09-05'
+method: probed
+source: live HTTPS probes of the named /.well-known/ path list on every host in apis.yml
+hit_count: 0
+path_echo_control: passed
+note: >-
+  Zero documents served. Eight hosts were probed against the closed named path list plus a
+  per-host negative control. The five consumer-commerce hosts (carters.com, www.carters.com,
+  api.carters.com, www.oshkosh.com, www.skiphop.com) sit behind a Cloudflare managed challenge
+  and answer 403 (cf-mitigated: challenge) to every path including the negative control, so
+  their result is 'not readable by a crawler', not 'confirmed absent'. corporate.carters.com and
+  careers.carters.com are directly reachable and return a clean 404 on every path including the
+  control. No negative control returned 2xx anywhere, so no host is path-echoing. NO WellKnown
+  and NO SecurityTxt pointer is emitted from this probe: nothing was fetched or saved.
+hosts:
+  - host: https://www.carters.com
+    negative_control: {path: /.well-known/carters-negative-control-7f3ab91c.json, status: 403}
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 403
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 403
+        file: null
+      - path: /.well-known/api-catalog
+        status: 403
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 403
+        file: null
+      - path: /.well-known/ucp.json
+        status: 403
+        file: null
+      - path: /.well-known/acp.json
+        status: 403
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 403
+        file: null
+      - path: /.well-known/apis.json
+        status: 403
+        file: null
+      - path: /apis.json
+        status: 403
+        file: null
+      - path: /apis.yml
+        status: 403
+        file: null
+  - host: https://carters.com
+    negative_control: {path: /.well-known/carters-negative-control-7f3ab91c.json, status: 403}
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 403
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 403
+        file: null
+      - path: /.well-known/api-catalog
+        status: 403
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 403
+        file: null
+      - path: /.well-known/ucp.json
+        status: 403
+        file: null
+      - path: /.well-known/acp.json
+        status: 403
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 403
+        file: null
+      - path: /.well-known/apis.json
+        status: 403
+        file: null
+      - path: /apis.json
+        status: 403
+        file: null
+      - path: /apis.yml
+        status: 403
+        file: null
+  - host: https://api.carters.com
+    negative_control: {path: /.well-known/carters-negative-control-7f3ab91c.json, status: 403}
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 403
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 403
+        file: null
+      - path: /.well-known/api-catalog
+        status: 403
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 403
+        file: null
+      - path: /.well-known/ucp.json
+        status: 403
+        file: null
+      - path: /.well-known/acp.json
+        status: 403
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 403
+        file: null
+      - path: /.well-known/apis.json
+        status: 403
+        file: null
+      - path: /apis.json
+        status: 403
+        file: null
+      - path: /apis.yml
+        status: 403
+        file: null
+  - host: https://corporate.carters.com
+    negative_control: {path: /.well-known/carters-negative-control-7f3ab91c.json, status: 404}
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/ucp.json
+        status: 404
+        file: null
+      - path: /.well-known/acp.json
+        status: 404
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 404
+        file: null
+      - path: /.well-known/apis.json
+        status: 404
+        file: null
+      - path: /apis.json
+        status: 404
+        file: null
+      - path: /apis.yml
+        status: 404
+        file: null
+  - host: https://ir.carters.com
+    negative_control: {path: /.well-known/carters-negative-control-7f3ab91c.json, status: 403}
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 403
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 403
+        file: null
+      - path: /.well-known/api-catalog
+        status: 403
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 403
+        file: null
+      - path: /.well-known/ucp.json
+        status: 403
+        file: null
+      - path: /.well-known/acp.json
+        status: 403
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 403
+        file: null
+      - path: /.well-known/apis.json
+        status: 403
+        file: null
+      - path: /apis.json
+        status: 403
+        file: null
+      - path: /apis.yml
+        status: 403
+        file: null
+  - host: https://careers.carters.com
+    negative_control: {path: /.well-known/carters-negative-control-7f3ab91c.json, status: 404}
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/ucp.json
+        status: 404
+        file: null
+      - path: /.well-known/acp.json
+        status: 404
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 404
+        file: null
+      - path: /.well-known/apis.json
+        status: 404
+        file: null
+      - path: /apis.json
+        status: 403
+        file: null
+      - path: /apis.yml
+        status: 403
+        file: null
+  - host: https://www.oshkosh.com
+    negative_control: {path: /.well-known/carters-negative-control-7f3ab91c.json, status: 403}
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 403
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 403
+        file: null
+      - path: /.well-known/api-catalog
+        status: 403
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 403
+        file: null
+      - path: /.well-known/ucp.json
+        status: 403
+        file: null
+      - path: /.well-known/acp.json
+        status: 403
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 403
+        file: null
+      - path: /.well-known/apis.json
+        status: 403
+        file: null
+      - path: /apis.json
+        status: 403
+        file: null
+      - path: /apis.yml
+        status: 403
+        file: null
+  - host: https://www.skiphop.com
+    negative_control: {path: /.well-known/carters-negative-control-7f3ab91c.json, status: 403}
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 403
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 403
+        file: null
+      - path: /.well-known/api-catalog
+        status: 403
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 403
+        file: null
+      - path: /.well-known/ucp.json
+        status: 403
+        file: null
+      - path: /.well-known/acp.json
+        status: 403
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 403
+        file: null
+      - path: /.well-known/apis.json
+        status: 403
+        file: null
+      - path: /apis.json
+        status: 403
+        file: null
+      - path: /apis.yml
+        status: 403
+        file: null
